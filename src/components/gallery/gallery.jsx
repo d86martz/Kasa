@@ -1,17 +1,17 @@
 import React from "react";
-import LocationsData from "../../datas/locations.json";
+import HousingData from "../../datas/housingData.json";
 import Card from "../card/card";
 
 const Gallery = () => {
   return (
     <div className="gallery">
-      {LocationsData.map((location) => {
+      {HousingData.map((housing) => {
         return (
           <Card
-            key={location.id}
-            cover={location.cover}
-            alt={location.title}
-            title={location.title}
+            id={housing.id}
+            cover={housing.cover}
+            alt={housing.title}
+            title={housing.title}
           />
         );
       })}

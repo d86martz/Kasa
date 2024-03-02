@@ -1,4 +1,4 @@
-import HeaderNav from "../navBar/navBar";
+import NavBar from "../navBar/navBar";
 import Logo_d from "../../assets/images/logo-210w.webp"
 import Logo_m from "../../assets/images/logo-150w.webp"
 
@@ -14,7 +14,7 @@ const Header = () => {
           classname="header-logo"
         />
       </div>
-      <HeaderNav />
+      <NavBar title="header-nav"/>
     </header>
   );
 };

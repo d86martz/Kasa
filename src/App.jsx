@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Home from './pages/home/home'
 import About from './pages/about/about'
-import Location from './pages/location/location'
+import Housing from './pages/housing/housing'
 import Error from './pages/error/error'
 
 import Header from "./components/header/header";
@@ -19,7 +19,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/location/:id" element={<Location />} />
+              <Route path="/housing/:id" element={<Housing />} />
               <Route path="*" element={<Error />} />
             </Routes>
             <Footer />
