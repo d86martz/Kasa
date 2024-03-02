@@ -1,10 +1,9 @@
+import { useLocation } from "react-router-dom";
 import HousingData from "../../datas/housingData.json";
-import { useState } from 'react'
 
 const Housing = () => {
-  const target = useState()
-  console.log(target)
-  const housing = HousingData.find(data => data.id === target)
+  const location = useLocation()
+  const housing = HousingData.find(data => data.id === location.state.id)
   return (
     <div className="housing">
       <h1>{housing.title}</h1>
@@ -12,4 +11,4 @@ const Housing = () => {
   );
 };
   
-  export default Housing
+export default Housing
