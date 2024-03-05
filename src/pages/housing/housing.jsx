@@ -23,10 +23,13 @@ const Housing = () => {
   const nextPicture = () => {
     setIndex(index === pictures - 1 ? 0 : index + 1 )
   }
-
+  const equipments =  
+    <ul className="equipments-list">
+    {housing.equipments.map((equipment => <li className="equipment">{equipment}</li>))}
+    </ul>
   return (
     <div className="housing-info">
-      <div className='carrousel'>
+      <div className="carrousel">
         <img className='carrousel-picture' src={housing.pictures[index]} alt="Logement" />
         <img onClick={prevPicture} className='carrousel-ArrowLeft' src={ArrowLeft} alt="Flèche gauche" />
         <img onClick={nextPicture} className='carousel-ArrowRight' src={ArrowRight} alt="Flèche droite" />
@@ -38,24 +41,12 @@ const Housing = () => {
         <Tags className="housing-tags" tagsData={housing.tags} />
       </div>
       <div className='housing-host'>
-        <div>
-          <p className='housing-hostName'>{housing.host.name}</p>
-          <img className='housing-hostAvatar' src={housing.host.picture} alt={housing.host.name} />
-        </div>
-        <div>
-          <Rating rating={housing.rating} />
-        </div>
+        <p className='housing-hostName'>{housing.host.name}</p>
+        <img className='housing-hostAvatar' src={housing.host.picture} alt={housing.host.name} />
+        <Rating className="host-rating" rating={housing.rating} />
       </div>
-      <Collapse title="Description">
-          {housing.description}
-      </Collapse>
-      <Collapse title="Équipements">
-          <ul>
-            {
-              housing.equipments.map((equipment => <li>{equipment}</li>))
-            }
-          </ul>
-      </Collapse>
+      <Collapse title="Description" data={housing.description} />
+      <Collapse title="Équipements" data={equipments} />
     </div>
   )
 }

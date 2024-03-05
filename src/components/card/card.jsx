@@ -1,5 +1,4 @@
-
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from 'react-router-dom'
 
 const Card = ({id, cover, title}) => {
   const navigate = useNavigate()
@@ -16,4 +15,4 @@ const Card = ({id, cover, title}) => {
   );
 }
 
-export default Card;
+export default Card

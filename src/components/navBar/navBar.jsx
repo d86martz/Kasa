@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom"
 
 import NavBarList from "../../datas/navBarList.json"
 
@@ -7,10 +6,10 @@ const NavBar = (props) => {
   const navList = NavBarList.find((list => list.title === props.title))
   return (
     <nav className={navList.title}>
-      <ul>
+      <ul className="navList">
         {navList.items.map(({name, page}) => {
           return (
-            <li>
+            <li className="navList-item">
               <NavLink to={`/${page}`}>{name}</NavLink> 
             </li>
           )
@@ -20,4 +19,4 @@ const NavBar = (props) => {
   )
 }
 
-export default NavBar;
+export default NavBar
