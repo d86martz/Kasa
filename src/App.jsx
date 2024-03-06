@@ -1,33 +1,28 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import {Route, Routes} from "react-router-dom"
 
-import Home from './pages/home/home'
-import About from './pages/about/about'
-import Housing from './pages/housing/housing'
-import Error from './pages/error/error'
+import "./App.scss"
+
+import Home from "./pages/home/home";
+import About from "./pages/about/about";
+import Housing from "./pages/housing/housing";
+import ErrorPage from "./pages/error/error";
 
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 
 const App = () => {
   return (
-    ReactDOM.render(
-      <React.StrictMode>
-          <Router>
-          <Header />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/housing/:id" element={<Housing />} />
-              <Route path="*" element={<Error />} />
-            </Routes>
-            <Footer />
-          </Router>
-      </React.StrictMode>,
-  document.getElementById('root')
-  ) 
-  );
-}
+    <body>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/housing/:id" element={<Housing />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+    </body>
+  )
+};
 
 export default App;

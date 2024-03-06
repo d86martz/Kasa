@@ -1,22 +1,22 @@
-import Card from '../card/card'
+import Card from "../card/card";
 
-import HousingData from '../../datas/housingData.json'
+import HousingData from "../../datas/housingData.json";
 
 const Gallery = () => {
   return (
     <div className="gallery">
       {HousingData.map((housing) => {
         return (
-          <Card
+          <Card 
+            key={housing.id}
             id={housing.id}
             cover={housing.cover}
-            alt={housing.title}
             title={housing.title}
           />
-        )
+        );
       })}
     </div>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;

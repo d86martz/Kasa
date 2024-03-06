@@ -7,7 +7,7 @@ const Tags = ({ className, tagsData }) => {
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Tags
+export default Tags;

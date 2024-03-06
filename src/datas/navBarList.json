@@ -1,12 +1,14 @@
 [
     {
         "title":"header-nav",
-        "items": [
+        "links": [
             {  
+                "key":1,
                 "name":"Accueil",
                 "page":"" 
             },
             {
+                "key":2,
                 "name":"A Propos",
                 "page":"about"
             }

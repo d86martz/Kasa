@@ -1,22 +1,24 @@
-import NavBar from "../navBar/navBar"
+import NavBar from "../navBar/navBar";
 
-import Logo_d from "../../assets/images/logo-210w.webp"
-import Logo_m from "../../assets/images/logo-150w.webp"
+import "./header.scss"
+
+import Logo_d from "../../assets/images/logo-210w.webp";
+import Logo_m from "../../assets/images/logo-150w.webp";
 
 const Header = () => {
   return (
     <header>
-      <div class="header-logo">
+      <div className="header-logo">
         <img
           src={Logo_d}
-          srcset={`${Logo_m} 150w, ${Logo_d} 210w`}
+          srcSet={`${Logo_m} 150w, ${Logo_d} 210w`}
           sizes="(max-width:600px) 150px, 210px"
           alt="Logo de la société"
         />
       </div>
-      <NavBar title="header-nav"/>
+      <NavBar title="header-nav" />
     </header>
   );
 };
 
-export default Header
+export default Header;

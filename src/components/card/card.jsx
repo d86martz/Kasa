@@ -1,18 +1,16 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 const Card = ({id, cover, title}) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const housingPage = (id) => {
-    navigate(`/housing/${id}`,
-       {state:id}
-    )
-  }
+      navigate(`/housing/${id}`, {state: id})
+  };
   return (
-    <article className="card" onClick={() => housingPage({id})}> 
-        <img src={cover} alt={title} />
-        <h3>{title}</h3> 
-    </article>
+    <card className="card" onClick={() => housingPage(id)}>
+      <img src={cover} alt={title} />
+      <h3>{title}</h3>
+    </card>
   );
-}
+};
 
-export default Card
+export default Card;

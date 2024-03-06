@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import ArrowUp from '../../assets/images/arrow_up.png'
+import ArrowUp from "../../assets/images/arrow_up.png";
 
 const Collapse = (props) => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   const expended = () => {
-    setOpen((position) => !position)
+    setOpen((position) => !position);
   };
   return (
     <div className="collapse">
@@ -21,4 +21,4 @@ const Collapse = (props) => {
     </div>
   );
 };
-export default Collapse
+export default Collapse;
