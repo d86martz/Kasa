@@ -12,7 +12,7 @@ import Footer from "./components/footer/footer";
 
 const App = () => {
   return (
-    <body>
+    <div id="root-body" >
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />
-    </body>
+    </div>
   )
 };
 

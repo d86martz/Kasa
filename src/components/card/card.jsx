@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
+import "./card.scss"
+
 const Card = ({id, cover, title}) => {
   const navigate = useNavigate();
   const housingPage = (id) => {

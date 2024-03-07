@@ -1,7 +1,10 @@
 header{
     display:flex;
     justify-content: space-between;
-    height: 68px;
+    align-items: center;
     width: 1240px;
-    margin: 0 auto;
+    height: 68px;
+    @media screen and (max-width: 768px) {
+        height: 47px;
+    }  
 }

@@ -7,7 +7,7 @@ import CollapsesData from "../../datas/collapsesData.json";
 
 const About = () => {
   return (
-    <div className="about">
+    <main>
       <Banner
         className="banner-about"
         image_d={Banner_d}
@@ -19,7 +19,7 @@ const About = () => {
           return <Collapse title={collapse.title} data={collapse.content} />;
         })}
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -1,3 +1,4 @@
+import "./banner.scss"
 
 const Banner = (props) => {
   return (

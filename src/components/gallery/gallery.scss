@@ -1,0 +1,10 @@
+.gallery{
+    padding:50px;
+    display: flex;
+    flex-wrap : wrap;
+    gap:50px;
+    object-fit: cover;
+    justify-content: center;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+  }

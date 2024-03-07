@@ -1,0 +1,25 @@
+.card {
+    display: flex;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+.card :hover{
+    cursor: pointer;
+}  
+.card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card h3{
+    display: flex;
+    word-wrap: break-word;
+    font-weight: 700;
+    position: absolute;
+    color: white;
+    margin-top: 300px;
+    margin-left: 20px;
+    font-size: 18px;
+}

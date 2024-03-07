@@ -6,7 +6,7 @@ import Banner_m from "../../assets/images/banner_1-335w.webp";
 
 const Home = () => {
   return (
-    <div className="home">
+    <main>
       <Banner
         className="banner"
         image_d={Banner_d}
@@ -14,7 +14,7 @@ const Home = () => {
         title="Chez vous, partout et ailleurs"
       />
       <Gallery />
-    </div>
+    </main>
   );
 };
 

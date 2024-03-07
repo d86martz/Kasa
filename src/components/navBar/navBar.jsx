@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 
+import "./navBar.scss"
+
 import NavBarList from "../../datas/navBarList.json";
 
 const NavBar = (props) => {

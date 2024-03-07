@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import "./collapse.scss"
+
 import ArrowUp from "../../assets/images/arrow_up.png";
 
 const Collapse = (props) => {
@@ -13,7 +15,7 @@ const Collapse = (props) => {
         <h3>{props.title}</h3>
         <img
           src={ArrowUp}
-          className={`collapse-arrow ${open ? "collapse-arrowReverse" : ""}`}
+          className={`collapse-arrow ${open ? "reverse" : ""}`}
           alt="flèche"
         />
       </div>

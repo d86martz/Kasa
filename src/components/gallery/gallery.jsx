@@ -1,5 +1,7 @@
 import Card from "../card/card";
 
+import "./gallery.scss";
+
 import HousingData from "../../datas/housingData.json";
 
 const Gallery = () => {
