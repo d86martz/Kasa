@@ -1,6 +1,8 @@
 import FullStar from "../../assets/images/full_star.png";
 import EmptyStar from "../../assets/images/empty_star.png";
 
+import "./rating.scss"
+
 const Rating = (props) => {
   const stars = [1, 2, 3, 4, 5];
   return (

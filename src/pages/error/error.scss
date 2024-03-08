@@ -1,66 +1,51 @@
-/********** Desktop ************/
-.error{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* 404 */
-.error_title{
-    display: flex;
+#error h1 {
     color: #FF6060;
+    font-family: "Montserrat";
     font-size: 288px;
     font-weight: 700;
     line-height: 410.69px;
     margin : 0;
 }
     
-/* oups */
-.error_text{
-    display: flex;
+
+#error span{
     color: #FF6060;
-    font-weight: 500;
     font-size: 36px;
     line-height: 51.34px;
 }
-/*retour à la page d'accueil*/
-.backhome{
-    color: #FF6060;
+
+#error a{
     font-size: 18px;
-    line-height: 142.6%;
-    display: flex;
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
-    text-align: center;
-    margin-top: 8%;
-    margin-bottom: 15%;
-
-}
-
-/********** Tablette **********/
-
-@media (max-width: 992px){
-/* 404 */
-.error_title{
-    font-size: 96px;
-    font-weight: 700;
-    line-height: 410.69px;
-    margin : 0;
-}
-.error_text{
-    font-size: 28px;
     line-height: 25.67px;
+    text-decoration-line: underline;
+    margin:70px 0;
 }
-}
+
+// /********** Tablette **********/
+
+// @media (max-width: 992px){
+// /* 404 */
+// .error_title{
+//     font-size: 96px;
+//     font-weight: 700;
+//     line-height: 410.69px;
+//     margin : 0;
+// }
+// .error_text{
+//     font-size: 28px;
+//     line-height: 25.67px;
+// }
+// }
   
-/************* Mobile *******************/
-@media (max-width: 768px){
-    .error_text{
-        font-size: 18px;
-        line-height: 25.67px;
-        text-align: center;
-        padding: 10px;
-    }
-    .backhome{
-        font-size: 14px;
-    }
-}
+// /************* Mobile *******************/
+// @media (max-width: 768px){
+//     .error_text{
+//         font-size: 18px;
+//         line-height: 25.67px;
+//         text-align: center;
+//         padding: 10px;
+//     }
+//     .backhome{
+//         font-size: 14px;
+//     }
+// }

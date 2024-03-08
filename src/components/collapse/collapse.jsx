@@ -12,7 +12,7 @@ const Collapse = (props) => {
   return (
     <div className="collapse">
       <div className="collapse-header" onClick={expended}>
-        <h3>{props.title}</h3>
+        <h2>{props.title}</h2>
         <img
           src={ArrowUp}
           className={`collapse-arrow ${open ? "reverse" : ""}`}

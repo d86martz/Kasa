@@ -12,7 +12,7 @@ const Header = () => {
         <img
           src={Logo_d}
           srcSet={`${Logo_m} 150w, ${Logo_d} 210w`}
-          sizes="(max-width:600px) 150px, 210px"
+          sizes="(max-width:375px) 150px, 210px"
           alt="Logo de la société"
         />
       </div>

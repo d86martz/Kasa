@@ -21,24 +21,30 @@ const Housing = () => {
     </ul>
   );
   return (
-    <main>
+    <main id="housing">
     <Carrousel pictures={pictures} />
+
       <div className="housing-description">
-        <h1 className="housing-title">{housing.title}</h1>
-        <span className="housing-location">{housing.location}</span>
-        <Tags className="housing-tags" tagsData={housing.tags} />
+        <div classNames="housing-situation">
+          <h1 className="housing-title">{housing.title}</h1>
+          <span className="housing-location">{housing.location}</span>
+          <Tags className="housing-tags" tagsData={housing.tags} />
+        </div>
+        <div className="housing-host">
+          <div className="housing-hostDescription">
+            <p className="housing-hostName">{housing.host.name}</p>
+            <img
+              className="housing-hostAvatar"
+              src={housing.host.picture}
+              alt={housing.host.name} />
+          </div>
+          <Rating className="host-rating" rating={housing.rating} />
+        </div>
       </div>
-      <div className="housing-host">
-        <p className="housing-hostName">{housing.host.name}</p>
-        <img
-          className="housing-hostAvatar"
-          src={housing.host.picture}
-          alt={housing.host.name}
-        />
-        <Rating className="host-rating" rating={housing.rating} />
+      <div className="collapses">
+        <Collapse title="Description" data={housing.description} />
+        <Collapse title="Equipements" data={equipments} />
       </div>
-      <Collapse title="Description" data={housing.description} />
-      <Collapse title="Equipements" data={equipments} />
     </main>
   );
 };

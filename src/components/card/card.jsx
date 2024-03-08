@@ -10,7 +10,7 @@ const Card = ({id, cover, title}) => {
   return (
     <card className="card" onClick={() => housingPage(id)}>
       <img src={cover} alt={title} />
-      <h3>{title}</h3>
+      <h2>{title}</h2>
     </card>
   );
 };

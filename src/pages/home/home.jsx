@@ -6,7 +6,7 @@ import Banner_m from "../../assets/images/banner_1-335w.webp";
 
 const Home = () => {
   return (
-    <main>
+    <main id="home">
       <Banner
         className="banner"
         image_d={Banner_d}

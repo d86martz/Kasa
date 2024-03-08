@@ -7,18 +7,15 @@ import CollapsesData from "../../datas/collapsesData.json";
 
 const About = () => {
   return (
-    <main>
+    <main id="about">
       <Banner
-        className="banner-about"
+        className="banner"
         image_d={Banner_d}
         image_m={Banner_m}
-        title=""
       />
-      <div className="Collapses">
         {CollapsesData.map((collapse) => {
           return <Collapse title={collapse.title} data={collapse.content} />;
         })}
-      </div>
     </main>
   );
 };

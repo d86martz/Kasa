@@ -3,7 +3,6 @@
     width: 340px;
     height: 340px;
     border-radius: 10px;
-    word-wrap: break-word;
 }
 .card :hover{
     cursor: pointer;
@@ -13,9 +12,9 @@
     object-fit: cover;
     border-radius: 10px;
 }
-.card h3{
+.card h2{
     display: flex;
-    word-wrap: break-word;
+    width:12%;
     font-weight: 700;
     position: absolute;
     color: white;

@@ -7,7 +7,7 @@ const Footer = () => {
       <img
         src={Footer_d}
         srcSet={`${Footer_m} 375w, ${Footer_d} 1440w`}
-        sizes="(max-width:600px) 375px, 1440px"
+        sizes="(max-width:375px) 375px, 1440px"
         alt="Logo de la société"
         className="footer-logo"
       />

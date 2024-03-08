@@ -29,9 +29,9 @@ li{
 main {
   display:flex;
   flex-direction: column;
+  align-items: center;
   width:1240px;
   gap:50px;
-  align-items: center;
   @media screen and (max-width: 768px) {
     gap:27px;
 }
