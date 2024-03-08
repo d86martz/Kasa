@@ -16,7 +16,7 @@ const Housing = () => {
   const equipments = (
     <ul className="equipments-list">
       {housing.equipments.map((equipment) => (
-        <li className="equipment">{equipment}</li>
+        <li key={equipment} className="equipment">{equipment}</li>
       ))}
     </ul>
   );
@@ -25,7 +25,7 @@ const Housing = () => {
     <Carrousel pictures={pictures} />
 
       <div className="housing-description">
-        <div classNames="housing-situation">
+        <div className="housing-situation">
           <h1 className="housing-title">{housing.title}</h1>
           <span className="housing-location">{housing.location}</span>
           <Tags className="housing-tags" tagsData={housing.tags} />

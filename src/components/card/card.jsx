@@ -8,10 +8,10 @@ const Card = ({id, cover, title}) => {
       navigate(`/housing/${id}`, {state: id})
   };
   return (
-    <card className="card" onClick={() => housingPage(id)}>
+    <article className="card" onClick={() => housingPage(id)}>
       <img src={cover} alt={title} />
       <h2>{title}</h2>
-    </card>
+    </article>
   );
 };
 

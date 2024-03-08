@@ -1,30 +1,31 @@
-/********** Desktop ************/
 .carrousel{
     display: flex;
     transition: transform .5s ease;
     width: 100%;
     height: 415px;
+}
+
+.carrousel-picture {
+    width: 100%;
+    object-fit: cover;
     border-radius: 25px;
 }
 
-.carousel img {
-    width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 25px;
-}
-
-.carousel_controls{
+.carrousel-controls{
     display: flex;
+    width:1240px;
+    top:315px;
+    justify-content: space-between;
     align-items: center;
+    position: absolute;
 }
 
 .carrousel-arrowLeft, .carrousel-arrowRight {
-    width: 30px ;
+    width:60px;
     height: auto;
     left: 24px ;
     position: absolute;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .carrousel-index{

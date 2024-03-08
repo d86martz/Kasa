@@ -1,15 +1,8 @@
-.carrousel{
+.collapses {
     display:flex;
-}
-.carrousel-picture{
-    border-radius: 25px;
-}
-.carrousel-arrowLeft{
-    position: absolute;
-    z-index: 3;
-}
-.carrousel-arrowLeft{
-    position: absolute;
+    justify-content: space-between;
+    width:100%;
+    gap:76px;
 }
 .housing-description {
     display:flex;
@@ -64,10 +57,4 @@
     border-radius: 50%;
     width: 64px;
     height: 64px;
-}
-.collapses {
-    display:flex;
-    justify-content: space-between;
-    width:100%;
-    gap:76px;
 }

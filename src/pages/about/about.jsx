@@ -14,7 +14,7 @@ const About = () => {
         image_m={Banner_m}
       />
         {CollapsesData.map((collapse) => {
-          return <Collapse title={collapse.title} data={collapse.content} />;
+          return <Collapse key={collapse.title} title={collapse.title} data={collapse.content} />;
         })}
     </main>
   );

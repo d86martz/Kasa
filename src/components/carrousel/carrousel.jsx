@@ -21,22 +21,24 @@ const Carrousel = ({pictures}) => {
           src={pictures[index]}
           alt="Logement"
         />
-        {length > 1 && ( 
-          <img 
-            onClick={prevPicture}
-            className="carrousel-arrowLeft"
-            src={ArrowLeft}
-            alt="Fleche gauche" 
-          />
-        )}
-        {length > 1 && ( 
-          <img 
-            onClick={nextPicture}
-            className="carousel-arrowRight"
-            src={ArrowRight}
-            alt="Fleche droite"
-          />
-         )}
+        <div className="carrousel-controls">
+          {length > 1 && ( 
+            <img 
+              onClick={prevPicture}
+              className="carrousel-arrowLeft"
+              src={ArrowLeft}
+              alt="Fleche gauche" 
+            />
+          )}
+          {length > 1 && ( 
+            <img 
+              onClick={nextPicture}
+              className="carrousel-arrowRight"
+              src={ArrowRight}
+              alt="Fleche droite"
+            />
+          )}
+        </div>
         <p className="carrousel-index">
           {index + 1}/{length}
         </p>
