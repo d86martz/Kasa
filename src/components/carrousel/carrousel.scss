@@ -4,66 +4,27 @@
     width: 100%;
     height: 415px;
 }
-
-.carrousel-picture {
+#carrousel-picture {
     width: 100%;
     object-fit: cover;
     border-radius: 25px;
 }
-
-.carrousel-controls{
+#carrousel-controls{
     display: flex;
     width:1240px;
-    top:315px;
-    justify-content: space-between;
+    height:79.2px;
+    top:350px;
     align-items: center;
+    justify-content: space-between;
     position: absolute;
 }
-
-.carrousel-arrowLeft, .carrousel-arrowRight {
-    width:60px;
-    height: auto;
-    left: 24px ;
-    position: absolute;
+#carrousel-arrowLeft, #carrousel-arrowRight {
     cursor: pointer;
 }
-
-.carrousel-index{
+#carrousel-index{
     position: absolute;
-    left: 49%;
+    left: 50%;
     font-size: 18px;
-    bottom: 24px;
+    top: 500px;
     color: white;
-}
-
-/********** Tablette **********/
-@media (max-width: 992px){
-.chevronLeft {
-    width: 3%;
-    left: 6px;
-}
-.chevronRight {
-    width: 3%;
-    right: 6px;
-}
-.carrousel_Index{
-    font-size: 12px;
-    bottom: 6px;
-}    
-}
-  
-/************* Mobile *******************/
-@media (max-width: 768px){
-.carousel{
-    margin-bottom: 15px;
-}
-.carousel_container{
-    height: 255px;
-    border-radius: 10px;
-}
-.carousel_img{
-    border-radius: 10px;
-}
-}
-
-    
+}   

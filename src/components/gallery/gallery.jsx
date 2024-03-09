@@ -4,19 +4,21 @@ import "./gallery.scss";
 
 import HousingData from "../../datas/housingData.json";
 
-const Gallery = () => {
+const Gallery = (props) => {
   return (
-    <div className="gallery">
-      {HousingData.map((housing) => {
-        return (
-          <Card 
-            key={housing.id}
-            id={housing.id}
-            cover={housing.cover}
-            title={housing.title}
-          />
-        );
-      })}
+    <div id={props.id}>
+      <ul id="galleryList">
+        {HousingData.map((housing => {
+          return (
+              <Card 
+                key={housing.id}
+                id={housing.id}
+                cover={housing.cover}
+                title={housing.title}
+              />
+          );
+        }))}
+      </ul>
     </div>
   );
 };

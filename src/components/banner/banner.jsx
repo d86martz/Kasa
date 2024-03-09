@@ -2,7 +2,7 @@ import "./banner.scss"
 
 const Banner = (props) => {
   return (
-    <div className={props.className}>
+    <div id={props.id} className="banner">
       <img
         src={props.image_d}
         srcSet={`${props.image_m} 335w, ${props.image_d} 1240w`}

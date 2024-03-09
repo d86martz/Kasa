@@ -8,7 +8,7 @@ import Logo_m from "../../assets/images/logo-150w.webp";
 const Header = () => {
   return (
     <header>
-      <div className="header-logo">
+      <div id="header-logo">
         <img
           src={Logo_d}
           srcSet={`${Logo_m} 150w, ${Logo_d} 210w`}

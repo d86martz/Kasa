@@ -8,12 +8,12 @@ const Home = () => {
   return (
     <main id="home">
       <Banner
-        className="banner"
+        id="home-banner"
         image_d={Banner_d}
         image_m={Banner_m}
         title="Chez vous, partout et ailleurs"
       />
-      <Gallery />
+      <Gallery id="home-gallery"/>
     </main>
   );
 };

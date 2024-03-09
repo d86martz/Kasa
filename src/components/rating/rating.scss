@@ -1,26 +1,4 @@
-/********** Desktop ************/
-.host-rating{
+.ratingList {
     display: flex;
     gap: 10px;
 }
-
-
-// /********** Tablette **********/
-// @media (max-width: 992px){
-// .rating_icon{
-//     width: 24px;
-// }
-// }
-
-// /************* Mobile *******************/
-// @media (max-width: 768px){  
-// .rating{
-//     gap: 5px;
-//     margin-top: 0;
-//     margin-bottom: 0;
-// }
-// .rating_icon{
-//     width: 15%;
-//     height: 15%;
-// }  
-// }

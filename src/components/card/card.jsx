@@ -2,16 +2,17 @@ import { useNavigate } from "react-router-dom";
 
 import "./card.scss"
 
-const Card = ({id, cover, title}) => {
+const Card = (props) => {
   const navigate = useNavigate();
+  const id = props.id
   const housingPage = (id) => {
       navigate(`/housing/${id}`, {state: id})
   };
   return (
-    <article className="card" onClick={() => housingPage(id)}>
-      <img src={cover} alt={title} />
-      <h2>{title}</h2>
-    </article>
+    <li className="card" onClick={() => housingPage(id)}>
+      <img src={props.cover} alt={props.title} />
+      <h2>{props.title}</h2>
+    </li>
   );
 };
 

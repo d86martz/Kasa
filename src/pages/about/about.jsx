@@ -1,5 +1,6 @@
 import Banner from "../../components/banner/banner";
-import Collapse from "../../components/collapse/collapse";
+
+import CollapsesList from "../../components/collapsesList/collapsesList";
 
 import Banner_d from "../../assets/images/banner_2-1440w.webp";
 import Banner_m from "../../assets/images/banner_2-335w.webp";
@@ -13,9 +14,7 @@ const About = () => {
         image_d={Banner_d}
         image_m={Banner_m}
       />
-        {CollapsesData.map((collapse) => {
-          return <Collapse key={collapse.title} title={collapse.title} data={collapse.content} />;
-        })}
+      <CollapsesList title="about" data={CollapsesData} itemsListLabel="items" itemTitle="title" itemContent="content"/>;
     </main>
   );
 };

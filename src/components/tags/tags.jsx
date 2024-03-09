@@ -1,8 +1,10 @@
-const Tags = ({ className, tagsData}) => {
+import "./tags.scss"
+
+const Tags = (props) => {
   return (
-    <div className={className}>
+    <div id={props.className}>
       <ul className="tagsList">
-        {tagsData.map((tag) => (
+        {props.tagsData.map((tag) => (
           <li key={tag} className="tagList-item">{tag}</li>
         ))}
       </ul>
