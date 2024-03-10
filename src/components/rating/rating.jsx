@@ -11,7 +11,7 @@ const Rating = (props) => {
         {stars.map((star) => {
           const rate = props.rating >= star ? FullStar : EmptyStar;
           return (
-            <li key="star" className="ratingList-item">
+            <li key={star} className="ratingList-item">
               <img src={rate} alt="star"></img>
             </li>
           )

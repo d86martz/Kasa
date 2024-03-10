@@ -2,17 +2,15 @@ import NavBar from "../navBar/navBar";
 
 import "./header.scss"
 
-import Logo_d from "../../assets/images/logo-210w.webp";
-import Logo_m from "../../assets/images/logo-150w.webp";
+import LogoImg from "../../assets/images/logo-210w.webp";
+
 
 const Header = () => {
   return (
     <header>
       <div id="header-logo">
         <img
-          src={Logo_d}
-          srcSet={`${Logo_m} 150w, ${Logo_d} 210w`}
-          sizes="(max-width:375px) 150px, 210px"
+          src={LogoImg}
           alt="Logo de la société"
         />
       </div>

@@ -1,8 +1,5 @@
-#housing-collapses {
-    display:flex;
-    justify-content: space-between;
-    width:100%;
-    gap:76px;
+#housing {
+    gap:30px;
 }
 #housing-description {
     display:flex;
@@ -41,4 +38,10 @@
     border-radius: 50%;
     width: 64px;
     height: 64px;
+}
+#housing-collapses {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    gap:76px;
 }

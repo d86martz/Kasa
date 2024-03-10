@@ -5,20 +5,13 @@ import "./housing.scss"
 import Carrousel from "../../components/carrousel/carrousel";
 import Tags from "../../components/tags/tags";
 import Rating from "../../components/rating/rating";
-// import Collapses from "../../components/collapses/collapses";
+import Collapse from "../../components/collapse/collapse";
 
 import HousingData from "../../datas/housingData.json";
 
 const Housing = () => {
   const location = useLocation();
-  const housing = HousingData.find((data) => data.id === location.state);
-  // const equipments = (
-  //   <ul id="equipments-list">
-  //     {housing.equipments.map((equipment) => (
-  //       <li key={equipment} className="equipment">{equipment}</li>
-  //     ))}
-  //   </ul>
-  // );
+  const housing = HousingData.find((data => data.id === location.state));
   return (
     <main id="housing">
     <Carrousel id="housing-carrousel" pictures={housing.pictures} />
@@ -40,7 +33,8 @@ const Housing = () => {
         </div>
       </div>
       <div id="housing-collapses">
-        {/* <Collapses title="housing" /> */}
+      <Collapse title="Description" content={housing.description}/>
+      <Collapse title="Equipments" content={housing.equipments}/>
       </div>
     </main>
   );

@@ -1,22 +1,25 @@
 import Banner from "../../components/banner/banner";
 
-import Collapses from "../../components/collapses/collapses";
+import Collapse from "../../components/collapse/collapse";
 
-import Banner_d from "../../assets/images/banner_2-1440w.webp";
-import Banner_m from "../../assets/images/banner_2-335w.webp";
-import CollapsesData from "../../datas/collapsesData.json";
+import BannerImg from "../../assets/images/banner_2-1440w.webp";
+import AboutCollapses from "../../datas/aboutCollapses.json";
+
+import "./about.scss"
 
 const About = () => {
-  const collapsesTitle="about"
-  const collapsesList = CollapsesData.filter((list => list.title === collapsesTitle))
+
   return (
     <main id="about">
       <Banner
         className="banner"
-        image_d={Banner_d}
-        image_m={Banner_m}
+        image={BannerImg}
       />
-      <Collapses data={collapsesList} title={collapsesTitle} titleLabel="collapseTitle" contentLabel="collapseContent"/>
+      <div id="aboutCollapses">
+        {AboutCollapses.map((collapse => 
+          <Collapse key={collapse.title} title={collapse.title} content={collapse.content} />
+        ))}
+      </div>
     </main>
   );
 };

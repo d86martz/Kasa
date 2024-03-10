@@ -1,13 +1,11 @@
-import Footer_d from "../../assets/images/footer-1440w.webp";
-import Footer_m from "../../assets/images/footer-375w.webp";
+import FooterImg from "../../assets/images/footer-1440w.webp";
+
 
 const Footer = () => {
   return (
     <footer>
       <img
-        src={Footer_d}
-        srcSet={`${Footer_m} 375w, ${Footer_d} 1440w`}
-        sizes="(max-width:375px) 375px, 1440px"
+        src={FooterImg}
         alt="Logo de la société"
         className="footer-logo"
       />
