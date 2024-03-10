@@ -1,12 +1,14 @@
 import Banner from "../../components/banner/banner";
 
-import CollapsesList from "../../components/collapsesList/collapsesList";
+import Collapses from "../../components/collapses/collapses";
 
 import Banner_d from "../../assets/images/banner_2-1440w.webp";
 import Banner_m from "../../assets/images/banner_2-335w.webp";
 import CollapsesData from "../../datas/collapsesData.json";
 
 const About = () => {
+  const collapsesTitle="about"
+  const collapsesList = CollapsesData.filter((list => list.title === collapsesTitle))
   return (
     <main id="about">
       <Banner
@@ -14,7 +16,7 @@ const About = () => {
         image_d={Banner_d}
         image_m={Banner_m}
       />
-      <CollapsesList title="about" data={CollapsesData} itemsListLabel="items" itemTitle="title" itemContent="content"/>;
+      <Collapses data={collapsesList} title={collapsesTitle} titleLabel="collapseTitle" contentLabel="collapseContent"/>
     </main>
   );
 };

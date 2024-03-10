@@ -5,7 +5,7 @@ import "./navBar.scss"
 import NavBarList from "../../datas/navBarList.json";
 
 const NavBar = (props) => {
-  const navList = NavBarList.find((list) => list.title === props.title);
+  const navList = NavBarList.find((list => list.title === props.title));
   return (
     <nav id={navList.title}>
       <ul className="navList">
