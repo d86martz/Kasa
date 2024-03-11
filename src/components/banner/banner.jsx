@@ -7,7 +7,7 @@ const Banner = (props) => {
         src={props.image}
         alt="Bannière"
       />
-      <h1>{props.title}</h1>
+      <h1 id="banner-title">{props.title}</h1>
     </div>
   );
 };

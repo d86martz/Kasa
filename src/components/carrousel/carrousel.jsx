@@ -39,9 +39,11 @@ const Carrousel = (props) => {
             />
           )}
         </div>
-        <p id="carrousel-index">
-          {index + 1}/{picturesLength}
-        </p>
+        {picturesLength > 1 && (
+          <p id="carrousel-index">
+            {index + 1}/{picturesLength}
+          </p>
+        )}
     </div>
   )
 }

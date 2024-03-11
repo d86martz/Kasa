@@ -2,6 +2,8 @@ import {useLocation} from "react-router-dom";
 
 import "./housing.scss"
 
+import ErrorPage from "../error/error"
+
 import Carrousel from "../../components/carrousel/carrousel";
 import Tags from "../../components/tags/tags";
 import Rating from "../../components/rating/rating";
@@ -12,6 +14,8 @@ import HousingData from "../../datas/housingData.json";
 const Housing = () => {
   const location = useLocation();
   const housing = HousingData.find((data => data.id === location.state));
+  console.log(housing)
+  if (location.state == null) return (<ErrorPage />);
   return (
     <main id="housing">
     <Carrousel id="housing-carrousel" pictures={housing.pictures} />
@@ -34,7 +38,7 @@ const Housing = () => {
       </div>
       <div id="housing-collapses">
       <Collapse title="Description" content={housing.description}/>
-      <Collapse title="Equipments" content={housing.equipments}/>
+      <Collapse title="Equipements" content={housing.equipments}/>
       </div>
     </main>
   );

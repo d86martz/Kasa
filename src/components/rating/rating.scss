@@ -1,4 +1,13 @@
 .ratingList {
     display: flex;
     gap: 10px;
+    @media (max-width: 510px){
+        height: 18px;
+        padding-left: 0;
+    }
+}
+.ratingList-item img{
+    @media (max-width: 510px){
+        height: 13px;
+    }
 }

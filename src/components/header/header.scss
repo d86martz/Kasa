@@ -2,9 +2,15 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width: 1240px;
+    width: 86%;
+    min-width: 335px;
     height: 68px;
-    @media screen and (max-width: 768px) {
+    @media (max-width: 510px) {
         height: 47px;
     }  
+}
+#header-logo, #header-logo img{
+    @media (max-width: 510px){
+       width: 145px;
+    }
 }

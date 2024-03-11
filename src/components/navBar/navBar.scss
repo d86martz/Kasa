@@ -1,23 +1,21 @@
 .navList{
     display:flex;
+    align-items: center;
     gap: 57px;
     padding-inline-start: 0;
+    @media (max-width: 550px){
+        gap:26px;
+    }
 }
 .navList-item{
     font-weight: 500;
     font-size: 24px;
+    @media (max-width: 550px){
+        font-size: 12px;
+        text-transform: uppercase;
+    }
 }
 .navList-item :focus {
     text-decoration-line: underline;
     text-underline-offset: 5px;
-
-}
-@media (max-width: 768px){
-    .navList {
-        gap:26px;
-    }
-    .navList-item {
-    font-size: 12px;
-    text-transform: uppercase;
-    } 
 }

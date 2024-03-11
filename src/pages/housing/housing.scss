@@ -1,47 +1,87 @@
 #housing {
     gap:30px;
+    @media (max-width: 510px){
+        gap:10px;
+    }
 }
 #housing-description {
     display:flex;
     justify-content: space-between;
     width:100%;
+    @media (max-width: 510px){
+        flex-direction: column;
+    }
 }
+
 #housing-title {
     color: #FF6060;
     font-size: 36px;
     font-weight: 500;
     line-height: 51.34px;
     margin: 0;
+    @media (max-width: 510px){
+        font-size: 18px;
+        line-height: 25.67px;
+    }
 }
 #housing-location{
     font-size: 18px;
     line-height: 25.67px;
+    @media (max-width: 510px){
+        font-size: 14px;
+    }
 }
 #housing-host{
     margin-top:0;
+    @media (max-width: 510px){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 #housing-hostDescription{
     display: flex;
-    justify-content:end;
+    justify-content:flex-end;
     gap:10px;
     align-items: center;
     margin-bottom: 15px;
+    @media (max-width: 510px){
+        margin:0;
+    } 
 }
 #housing-hostName{
     width:80px;
     color: #FF6060;
     font-size: 18px;
     line-height: 25.67px;
-    text-align: right; 
+    text-align: right;
+    @media (max-width: 510px){
+        width: 40px;
+        font-size: 12px;
+        line-height: 17.11px;
+        margin:0;
+    } 
 }
 #housing-hostAvatar {
     border-radius: 50%;
     width: 64px;
     height: 64px;
+    @media (max-width: 510px){
+        width: 32px;
+        height: 32px;
+    }
+}
+#host-rating{
+    display: flex;
 }
 #housing-collapses {
     display:flex;
     justify-content: space-between;
     width:100%;
     gap:76px;
+    @media (max-width: 550px){
+        flex-direction: column;
+        gap:20px;
+    }
 }

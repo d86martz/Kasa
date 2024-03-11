@@ -1,30 +1,55 @@
-.carrousel{
+#housing-carrousel{
     display: flex;
     transition: transform .5s ease;
     width: 100%;
     height: 415px;
+    @media (max-width: 810px){
+        height:255px;
+    }
 }
 #carrousel-picture {
     width: 100%;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 #carrousel-controls{
     display: flex;
-    width:1240px;
-    height:79.2px;
-    top:350px;
     align-items: center;
     justify-content: space-between;
     position: absolute;
+    width:1240px;
+    min-width: 330px;
+    top:310px;
+    @media (max-width: 1440px){
+        width: 86%;
+    }
+    @media (max-width: 810px){
+        top:270px;
+    }
+    @media (max-width: 510px){
+        top:210px;
+    }
 }
 #carrousel-arrowLeft, #carrousel-arrowRight {
     cursor: pointer;
+    @media (max-width: 810px){
+        width: 48px; 
+     }
+     @media (max-width: 510px){
+        width: 24px; 
+     }
 }
 #carrousel-index{
-    position: absolute;
-    left: 50%;
+    position: fixed;
     font-size: 18px;
+    left:710px;
     top: 500px;
     color: white;
+    @media (max-width: 1440px){
+        position: absolute;
+        left: 49%;
+    }
+    @media (max-width: 510px){
+        display:none;
+    }
 }   
