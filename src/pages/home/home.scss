@@ -1,10 +1,8 @@
 #home {
-    gap:22px;
-}
-#home-gallery {
-    display:flex;
-    width: 100%;
-    @media (max-width: 550px) {
-        gap:22px;
+  gap: 22px;
+  #banner {
+    img {
+      filter: brightness(0.4);
     }
+  }
 }

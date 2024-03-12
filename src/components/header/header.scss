@@ -1,16 +1,18 @@
-header{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 86%;
-    min-width: 335px;
-    height: 68px;
-    @media (max-width: 510px) {
-        height: 47px;
-    }  
-}
-#header-logo, #header-logo img{
-    @media (max-width: 510px){
-       width: 145px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 86%;
+  min-width: 335px;
+  height: 68px;
+  margin-top: 45px;
+  @media (max-width: 665px) {
+    height: 47px;
+    margin-top: 27px;
+  }
+  img {
+    @media (max-width: 665px) {
+      width: 145px;
     }
+  }
 }

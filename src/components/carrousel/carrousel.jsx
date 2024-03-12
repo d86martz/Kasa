@@ -15,9 +15,8 @@ const Carrousel = (props) => {
       setIndex(index === picturesLength - 1 ? 0 : index + 1);
     };
   return (
-    <div id={props.id} className="carrousel">
+    <div id="carrousel">
         <img 
-          id="carrousel-picture"
           src={props.pictures[index]}
           alt="Logement"
         />
@@ -25,7 +24,6 @@ const Carrousel = (props) => {
           {picturesLength > 1 && ( 
             <img 
               onClick={prevPicture}
-              id="carrousel-arrowLeft"
               src={ArrowLeft}
               alt="Fleche gauche" 
             />
@@ -33,14 +31,13 @@ const Carrousel = (props) => {
           {picturesLength > 1 && ( 
             <img 
               onClick={nextPicture}
-              id="carrousel-arrowRight"
               src={ArrowRight}
               alt="Fleche droite"
             />
           )}
         </div>
         {picturesLength > 1 && (
-          <p id="carrousel-index">
+          <p>
             {index + 1}/{picturesLength}
           </p>
         )}

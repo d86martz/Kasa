@@ -1,13 +1,18 @@
-.ratingList {
+#rating {
+  ul {
     display: flex;
     gap: 10px;
-    @media (max-width: 510px){
-        height: 18px;
-        padding-left: 0;
+    @media (max-width: 665px) {
+      height: 18px;
+      padding-left: 0;
     }
-}
-.ratingList-item img{
-    @media (max-width: 510px){
-        height: 13px;
+    li {
+      img {
+        height: 24px;
+        @media (max-width: 810px) {
+          height: 13px;
+        }
+      }
     }
+  }
 }

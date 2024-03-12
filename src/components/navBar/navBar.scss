@@ -1,21 +1,23 @@
-.navList{
-    display:flex;
+#navBar {
+  ul {
+    display: flex;
     align-items: center;
     gap: 57px;
     padding-inline-start: 0;
-    @media (max-width: 550px){
-        gap:26px;
+    @media (max-width: 665px) {
+      gap: 26px;
     }
-}
-.navList-item{
-    font-weight: 500;
-    font-size: 24px;
-    @media (max-width: 550px){
+    li {
+      font-weight: 500;
+      font-size: 24px;
+      @media (max-width: 665px) {
         font-size: 12px;
         text-transform: uppercase;
+      }
+      :focus {
+        text-decoration-line: underline;
+        text-underline-offset: 5px;
+      }
     }
-}
-.navList-item :focus {
-    text-decoration-line: underline;
-    text-underline-offset: 5px;
+  }
 }

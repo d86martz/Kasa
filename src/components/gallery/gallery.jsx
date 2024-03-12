@@ -6,8 +6,8 @@ import HousingData from "../../datas/housingData.json";
 
 const Gallery = (props) => {
   return (
-    <div id={props.id}>
-      <ul id="galleryList">
+    <div id="gallery">
+      <ul>
         {HousingData.map((housing => {
           return (
               <Card 

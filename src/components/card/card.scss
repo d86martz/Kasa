@@ -1,4 +1,4 @@
-.card{
+#card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,25 +10,26 @@
         width: 100%;
         height:225px;
     }
-}
-.card:hover{
-    cursor:pointer;
-}  
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.card h2{
-    width:290px;
-    font-weight: 700;
-    position: absolute;
-    color: white;
-    padding-top: 260px;
-    font-size: 18px;
-    @media (max-width: 810px){
-        padding-left: 20px;
-        padding-top: 150px;
+
+    :hover{
+        cursor:pointer;
+    }  
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    h2{
+        width:290px;
+        font-weight: 700;
+        position: absolute;
+        color: white;
+        padding-top: 260px;
+        font-size: 18px;
+        @media (max-width: 810px){
+            padding-left: 20px;
+            padding-top: 150px;
+        }
     }
 }

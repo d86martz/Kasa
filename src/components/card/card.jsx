@@ -9,7 +9,7 @@ const Card = (props) => {
       navigate(`/housing/${id}`, {state: id})
   };
   return (
-    <li className="card" onClick={() => housingPage(id)}>
+    <li id="card" onClick={() => housingPage(id)}>
       <img src={props.cover} alt={props.title} />
       <h2>{props.title}</h2>
     </li>

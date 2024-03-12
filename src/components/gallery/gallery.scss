@@ -1,17 +1,18 @@
-#galleryList{
+#gallery {
+  ul {
     display: flex;
-    flex-wrap : wrap;
+    flex-wrap: wrap;
     justify-content: center;
-    background-color: #F7F7F7;
-    width:100%;
-    margin:0;
-    gap:50px;
-    padding:50px;
+    background-color: #f7f7f7;
+    margin: 0;
+    gap: 50px;
+    padding: 50px;
     border-radius: 25px;
-    @media (max-width: 810px){
+    @media (max-width: 810px) {
       flex-direction: column;
-      padding:0;
+      padding: 0;
       background-color: white;
       gap: 22px;
     }
+  }
 }

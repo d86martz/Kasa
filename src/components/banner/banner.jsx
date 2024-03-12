@@ -2,12 +2,12 @@ import "./banner.scss"
 
 const Banner = (props) => {
   return (
-    <div id={props.id} className="banner">
+    <div id="banner">
       <img
         src={props.image}
         alt="Bannière"
       />
-      <h1 id="banner-title">{props.title}</h1>
+      <h1>{props.title}</h1>
     </div>
   );
 };

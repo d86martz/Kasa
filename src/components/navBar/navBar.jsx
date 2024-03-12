@@ -7,11 +7,11 @@ import NavBarList from "../../datas/navBarList.json";
 const NavBar = (props) => {
   const navList = NavBarList.find((list => list.title === props.title));
   return (
-    <nav id={navList.title}>
-      <ul className="navList">
+    <nav id="navBar">
+      <ul>
         {navList.links.map((link => {
           return (
-            <li key={link.name} className="navList-item">
+            <li key={link.name}>
               <NavLink to={`/${link.page}`}>{link.name}</NavLink>
             </li>
           );

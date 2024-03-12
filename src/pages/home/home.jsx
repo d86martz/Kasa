@@ -10,11 +10,10 @@ const Home = () => {
   return (
     <main id="home">
       <Banner
-        id="home-banner"
         image={BannerImg}
         title={title}
       />
-      <Gallery id="home-gallery"/>
+      <Gallery />
     </main>
   );
 };

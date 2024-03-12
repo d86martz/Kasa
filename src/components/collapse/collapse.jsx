@@ -10,7 +10,7 @@ const Collapse = (props) => {
     setOpen((position) => !position);
   };
   return (
-    <div className="collapse" onClick={expended}>
+    <div id="collapse" onClick={expended}>
       <div className="collapse-header">
         <h2>{props.title}</h2>
         <img
