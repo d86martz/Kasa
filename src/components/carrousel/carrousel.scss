@@ -41,15 +41,11 @@
         }
     }
     p{
-        position: fixed;
-        font-size: 18px;
-        left:710px;
+        position: absolute;
         top: 500px;
+        left: 49%;
+        font-size: 18px;
         color: white;
-        @media (max-width: 1440px){
-            position: absolute;
-            left: 49%;
-        }
         @media (max-width: 665px){
             font-size: 14px;
             top:330px;

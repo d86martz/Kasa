@@ -1,27 +1,26 @@
-import Banner from "../../components/banner/banner";
+import "./about.scss"                                                                            //Import de la feuille de style
 
-import Collapse from "../../components/collapse/collapse";
+import BannerImg from "../../assets/images/banner_2-1440w.webp";                                 //Import de l'image BannerImg
 
-import BannerImg from "../../assets/images/banner_2-1440w.webp";
-import AboutCollapses from "../../datas/aboutCollapses.json";
+import Banner from "../../components/banner/banner";                                             //Import du composant Banner
+import Collapse from "../../components/collapse/collapse";                                       //Import du composant Collapse
 
-import "./about.scss"
+import AboutCollapses from "../../datas/aboutCollapses.json";                                    //Import de l'objet contenant le contenu des collapses
 
-const About = () => {
-
-  return (
+const About = () => {                                                                            //Création d'un composant About
+  return (                                                                                       //Ajout au DOM
     <main id="about">
-      <Banner
-        className="banner"
-        image={BannerImg}
+      <Banner                                                                                    //Ajout du composant Banner
+        className="banner"                                                                       //Attribution d'une classe
+        image={BannerImg}                                                                        //Ajout de l'image BannerImg
       />
-      <div id="aboutCollapses">
-        {AboutCollapses.map((collapse => 
-          <Collapse key={collapse.title} title={collapse.title} content={collapse.content} />
+      <div id="aboutCollapses">                                                                  {/*Ajout du composant NavBar avec un paramètre title */}
+        {AboutCollapses.map((collapse =>                                                         //Itération dans la liste des collapses, pour chaque collapse:
+          <Collapse key={collapse.title} title={collapse.title} content={collapse.content} />    //Ajout du composant Collapse avec les paramètres title et content du collapse
         ))}
       </div>
     </main>
   );
 };
 
-export default About;
+export default About;                                                                            //Exportation du composant

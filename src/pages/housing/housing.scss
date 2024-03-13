@@ -1,13 +1,16 @@
+#housing, #housing-description, #housing-host, #housing-hostDescription, #housing-collapses{
+    display:flex;
+}
+#housing-description, #housing-collapses{
+    justify-content: space-between;
+    width:100%;
+}
 #housing {
-    display: flex;
     gap:30px;
     @media (max-width: 510px) {
         gap:10px;
     }
     #housing-description {
-        display:flex;
-        justify-content: space-between;
-        width:100%;
         @media (max-width: 665px) {
             flex-direction: column;
         }
@@ -33,13 +36,11 @@
     #housing-host {
         margin-top:0;
         @media (max-width: 665px) {
-            display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
             align-items: center;
         }
         #housing-hostDescription {
-            display: flex;
             justify-content:flex-end;
             gap:10px;
             align-items: center;
@@ -71,9 +72,6 @@
         }
     }
     #housing-collapses {
-        display:flex;
-        justify-content: space-between;
-        width:100%;
         gap:76px;
         @media (max-width: 665px) {
             flex-direction: column;
