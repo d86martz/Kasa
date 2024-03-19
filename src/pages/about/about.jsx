@@ -1,21 +1,21 @@
-import "./about.scss"                                                                            //Import de la feuille de style
+import "./about.scss"                                                                            
 
-import BannerImg from "../../assets/images/banner_2-1440w.webp";                                 //Import de l'image BannerImg
+import BannerImg from "../../assets/images/banner_2-1440w.webp";                                 
 
-import Banner from "../../components/banner/banner";                                             //Import du composant Banner
-import Collapse from "../../components/collapse/collapse";                                       //Import du composant Collapse
+import Banner from "../../components/banner/banner";                                             
+import Collapse from "../../components/collapse/collapse";                                       
 
-import AboutCollapses from "../../datas/aboutCollapses.json";                                    //Import de l'objet contenant le contenu des collapses
+import AboutCollapses from "../../datas/aboutCollapses.json";                                    
 
-const About = () => {                                                                            //Création d'un composant About
-  return (                                                                                       //Ajout au DOM
+const About = () => {                                                                            
+  return (                                                                                       
     <main id="about">
-      <Banner                                                                                    //Ajout du composant Banner
-        className="banner"                                                                       //Attribution d'une classe
-        image={BannerImg}                                                                        //Ajout de l'image BannerImg
+      <Banner                                                                                    
+        className="banner"                                                                       
+        image={BannerImg}                                                                        
       />
-      <div id="aboutCollapses">                                                                  {/*Ajout du composant NavBar avec un paramètre title */}
-        {AboutCollapses.map((collapse =>                                                         //Itération dans la liste des collapses, pour chaque collapse:
+      <div id="aboutCollapses">                                                                  
+        {AboutCollapses.map((collapse =>                                                         
           <Collapse key={collapse.title} title={collapse.title} content={collapse.content} />    //Ajout du composant Collapse avec les paramètres title et content du collapse
         ))}
       </div>
@@ -23,4 +23,4 @@ const About = () => {                                                           
   );
 };
 
-export default About;                                                                            //Exportation du composant
+export default About;                                                                            

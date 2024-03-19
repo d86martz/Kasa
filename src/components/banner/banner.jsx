@@ -1,13 +1,13 @@
-import "./banner.scss"            //import de la feuille de style
+import "./banner.scss"           
 
-const Banner = (props) => {       //Création d'un composant Bannière selon paramètres
-  return (                        //Ajout au DOM
+const Banner = (props) => {       
+  return (                        
     <div id="banner">             
       <img
-        src={props.image}         //Ajout d'une image selon le paramètre image 
-        alt="Bannière"            //Ajout d'une description à l'image
+        src={props.image}         
+        alt="Bannière"          
       />
-      <h1>{props.title}</h1>      {/* Ajout d'un titre selon le paramètre title */}
+      <h1>{props.title}</h1>      
     </div>
   );
 };

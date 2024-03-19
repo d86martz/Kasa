@@ -1,21 +1,21 @@
-import NavBar from "../navBar/navBar";                      //Import du composant NabBar
+import NavBar from "../navBar/navBar";                      
 
-import "./header.scss"                                      //Import de la feuille de style
+import "./header.scss"                                      
 
-import LogoImg from "../../assets/images/logo-210w.webp";   //Import de l'image LogoImg
+import LogoImg from "../../assets/images/logo-210w.webp";   
 
 
-const Header = () => {                                      //Création d'un composant Header
-  return (                                                  //Ajout au DOM
+const Header = () => {                                      
+  return (                                                  
     <header>
       <div id="header-logo">
         <img        
-          src={LogoImg}                                     //Ajout de l'image FooterImg
+          src={LogoImg}                                     
           alt="Logo de la société" />                       
       </div>
-      <NavBar title="header-nav" />                         {/*Ajout du composant NavBar avec un paramètre title */}
+      <NavBar title="header-nav" />                         
     </header>
   );
 };
 
-export default Header;                                      //Exportation du composant
+export default Header;                                      

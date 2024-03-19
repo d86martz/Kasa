@@ -1,43 +1,43 @@
 import {useLocation, Navigate} from "react-router-dom";                     //Import de la fonctionnalité de localisation et de navigation de react
 
-import "./housing.scss"                                                     //Import de la feuille de style
+import "./housing.scss"                                                     
 
-import Carrousel from "../../components/carrousel/carrousel";               //Import du composant Carrousel
-import Tags from "../../components/tags/tags";                              //Import du composant Tags
-import Rating from "../../components/rating/rating";                        //Import du composant Rating
-import Collapse from "../../components/collapse/collapse";                  //Import du composant Collapse
+import Carrousel from "../../components/carrousel/carrousel";               
+import Tags from "../../components/tags/tags";                              
+import Rating from "../../components/rating/rating";                        
+import Collapse from "../../components/collapse/collapse";                  
 
-import HousingData from "../../datas/housingData.json";                     //Import de l'objet contenant les données des logements
+import HousingData from "../../datas/housingData.json";                     
 
 const Housing = () => {
-  const location = useLocation();                                           //Constante pour passer un objet comme 2 ème argument dans location
+  const location = useLocation();                                           
   const housing = HousingData.find((data => data.id === location.state));   //Constante pour verifier si l'id du logement contenu dans la valeur d'etat correspond à un id dans l'objet
-  if (location.state == null) {                                             //Si la valeur d'état ne correspond pas
-    return <Navigate replace to="*" />                                      //Redirectin vers la page d'erreur
-  } else {                                                                  //Sinon
-    const equipments = (                                                    //constante pour créer la liste des equipements du logement
+  if (location.state == null) {                                             
+    return <Navigate replace to="*" />                                      
+  } else {                                                                  
+    const equipments = (                                                    
       <ul className="equipments-list">  
-        {housing.equipments.map((equipment, index) => (                     //Itération dans la liste des equipements du logements, pour chaque equipement:                 
+        {housing.equipments.map((equipment, index) => (                     //Itération dans la liste des equipements du logements               
           <li key={index} className="equipment">{equipment}</li>            //listage de l'equipement
         ))}
       </ul>
     );
-    return (                                                                //Ajout au DOM
+    return (                                                                
       <main id="housing">
       <Carrousel pictures={housing.pictures} />                             {/* Ajout du composant Carrousel avec en paramètre les photos du logement */}
         <div id="housing-description">
           <div id="housing-situation">
-            <h1>{housing.title}</h1>                                        {/* Ajout du titre du logement */}
-            <span>{housing.location}</span>                                 {/* Ajout de l'adresse du logement */}
+            <h1>{housing.title}</h1>                                        
+            <span>{housing.location}</span>                                 
             <Tags tagsData={housing.tags} />                                {/* Ajout du composant Tags avec en paramètre les étiquettes du logement */}
           </div>
           <div id="housing-host">
             <div id="housing-hostDescription">
-              <p>{housing.host.name}</p>                                    {/* Ajout du nom du proriétaire du logement */}
+              <p>{housing.host.name}</p>                                    
               <img
                 id="housing-hostAvatar"                                     
-                src={housing.host.picture}                                  // Ajout de la photo du proriétaire du logement
-                alt={housing.host.name} />                                  {/* Ajout du nom du proriétaire du logement */}
+                src={housing.host.picture}                                  
+                alt={housing.host.name} />                                  
             </div>
             <Rating rating={housing.rating} />                              {/* Ajout du composant Rating avec en paramètre la notes du logement */}
           </div>

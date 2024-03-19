@@ -1,20 +1,20 @@
-import Card from "../card/card";                          //Import du composant Card
+import Card from "../card/card";                          
 
-import "./gallery.scss";                                  //Import de la feuille de style
+import "./gallery.scss";                                  
 
-import HousingData from "../../datas/housingData.json";   //Import de l'objet contenant les données des logements
+import HousingData from "../../datas/housingData.json";   
 
-const Gallery = () => {                                   //Création d'un composant Gallery
+const Gallery = () => {                                   //Création d'un composant Gallery selon paramètres
   return (
     <div id="gallery">
       <ul>                                              
         {HousingData.map((housing => {                    //Itération dans l'objet contenant les données des logements, pour chaque logement:
-          return (                                        //Ajout au DOM
-              <Card                                       //Ajout du composant Card
-                key={housing.id}                          //paramètre key selon id du logement
-                id={housing.id}                           //paramètre id selon id du logement
-                cover={housing.cover}                     //paramètre cover selon le cover du logement
-                title={housing.title}                     //paramètre title selon titre du logement
+          return (                                        
+              <Card                                    
+                key={housing.id}                          
+                id={housing.id}                           
+                cover={housing.cover}                     
+                title={housing.title}                     
               />
           );
         }))}
@@ -23,4 +23,4 @@ const Gallery = () => {                                   //Création d'un compo
   );
 };
 
-export default Gallery;                                         //Exportation du composant
+export default Gallery;                                         

@@ -26,10 +26,11 @@
       white-space: pre-line;
     }
   }
-  a {
+  #homeReturn{
     font-size: 18px;
     line-height: 25.67px;
     text-decoration-line: underline;
+    text-underline-offset: 3px;
     margin: 70px 0;
     @media (max-width: 550px) {
       font-size: 14px;
