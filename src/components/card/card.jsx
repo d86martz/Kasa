@@ -10,7 +10,8 @@ const Card = (props) => {
   };
   return (                                            
     <li id="card" onClick={() => housingPage(id)}>    
-      <img src={props.cover} alt={props.title} />     
+      <img src={props.cover} alt={props.title} />
+      <h2>{props.title}</h2>     
     </li>
   );
 };
